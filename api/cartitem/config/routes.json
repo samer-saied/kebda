@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cartitems",
+      "handler": "cartitem.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cartitems/count",
+      "handler": "cartitem.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cartitems/:id",
+      "handler": "cartitem.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cartitems",
+      "handler": "cartitem.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cartitems/:id",
+      "handler": "cartitem.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cartitems/:id",
+      "handler": "cartitem.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sandwiches",
+      "handler": "sandwich.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sandwiches/count",
+      "handler": "sandwich.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sandwiches/:id",
+      "handler": "sandwich.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sandwiches",
+      "handler": "sandwich.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sandwiches/:id",
+      "handler": "sandwich.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sandwiches/:id",
+      "handler": "sandwich.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

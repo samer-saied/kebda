@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cartitems",
+  "info": {
+    "name": "cartitem",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "sandwich": {
+      "model": "sandwich"
+    },
+    "count": {
+      "type": "integer",
+      "default": 1
+    }
+  }
+}

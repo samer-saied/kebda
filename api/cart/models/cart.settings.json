@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "name": "cart"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "cartitems": {
+      "collection": "cartitem"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "address": {
+      "type": "richtext"
+    },
+    "details": {
+      "type": "richtext"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Prepare",
+        "delivery",
+        "Received"
+      ],
+      "default": "Prepare"
+    }
+  }
+}

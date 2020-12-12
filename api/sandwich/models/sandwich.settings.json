@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sandwiches",
+  "info": {
+    "name": "sandwich",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
+    },
+    "category": {
+      "model": "category",
+      "via": "sandwiches"
+    },
+    "Images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
